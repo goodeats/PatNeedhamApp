@@ -1,0 +1,136 @@
+div#navArea {
+  z-index: $z-nav;
+  position: fixed;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+div.navLogo {
+  margin: 5px 10px 0 10px;
+  padding: 5px;
+  border: 5px solid #000;
+  border-radius: 6px;
+  display: inline-block;
+  height: 80px;
+  position: absolute;
+  float: left;
+  z-index: $z-nav-icon;
+  background-color: #FFB500;
+  box-shadow: -4px 4px 0 rgba(0,0,0,0.5);
+  img {
+    height: 70px;
+  }
+  h1 {
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #000;
+    text-shadow: -2px 2px 0 rgba(0,0,0,0.5);
+  }
+}
+
+img.nav-bulb-dark {
+  position: relative;
+  // opacity: 0.6;
+}
+
+img.nav-bulb-light {
+  position: relative;
+  align: center;
+  opacity: 0.6;
+}
+
+.navImageOne {
+  margin-left: 2px;
+  z-index: 25;
+}
+
+.navImageTwo {
+  z-index: 50;
+  margin: 3px 3px 0 0;
+}
+
+nav.navbar {
+  width: 80%;
+  float: right;
+  position: relative;
+  top: 40%;
+  padding-right: 5%;
+}
+
+nav.navbar ul {
+  list-style: none;
+  background-color: #000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: -4px 4px 0 rgba(0,0,0,0.5);
+}
+nav.navbar li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+nav.navbar a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+nav.navbar a:hover {
+  background-color: #fff500;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+nav.navbar a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  nav.navbar li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  // nav.navbar li:first-child {
+  //   width: 240px;
+  //   border-bottom: none;
+  //   height: 50px;
+  //   line-height: 50px;
+  //   font-size: 1.4em;
+  // }
+
+  /* Option 1 - Display Inline */
+  nav.navbar li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}

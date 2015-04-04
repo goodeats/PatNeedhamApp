@@ -5,7 +5,7 @@
     <title>Pat Needham</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/pat_logo.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -15,23 +15,60 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
+    <script src="bower_components/angular/angular.js"></script>
+
+
   </head>
-  <body>
+  <body ng-app="Pat">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div id='navArea'>
+      <div class='navLogo'>
+        <div class="navImageOne image"><img class='nav-bulb-dark' src='http://i.imgur.com/gJUwydU.png'></div>
+        <div class="navImageTwo image"><img class='nav-bulb-light' src='http://i.imgur.com/gJUwydU.png'></div>
+        <h1>at Needham</h1>
+      </div>
+      <nav class="navbar">
+        <!-- <h1><i class="fa fa-lightbulb-o"></i> Pat Needham</h1> -->
 
+        <ul>
+          <li class="brand"><a  href="./index.html" title="">Home</a></li>
+          <li class="brand"><a  href="/" title="">About</a></li>
+          <li class="brand"><a  href="/" title="">Work</a></li>
+          <li class="brand"><a  href="/" title="">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
+    <div id='contact'>
+      <h5>Contact:</h5>
       <ul>
-      <li>HTML5 Boilerplate</li>
-      <li>Sass</li>
-
+        <li><a href='mailto:patrick.h.needham@gmail.com', target='_blank'><i class='fa fa-envelope-o'></i></a></li>
+        <li><a href='https://twitter.com/patneedham_', target='_blank'><i class='fa fa-twitter'></i></a></li>
+        <li><a href='https://www.linkedin.com/in/patrickneedham', target='_blank'><i class='fa fa-linkedin'></i></a></li>
+        <li><a href='https://github.com/goodeats', target='_blank'><i class='fa fa-github'></i></a></li>
+        <li><a href='https://www.facebook.com/patrick.h.needham', target='_blank'><i class='fa fa-facebook'></i></a></li>
+        <li><a href='skype:patrick.h.needham', target='_blank'><i class='fa fa-skype'></i></a></li>
       </ul>
     </div>
 
+    <div class='logo'>
+      <div class="imageOne image"><img class='bulb-dark' src='http://i.imgur.com/gJUwydU.png'></div>
+      <div class="imageTwo image"><img class='bulb-light' src='http://i.imgur.com/gJUwydU.png'></div>
+    </div>
+
+    <div class='container'>
+      <div ng-controller="MainCtrl as main" class='about'>
+        <p>{{ main.about }}</p>
+      </div>
+      <div ng-controller="MainCtrl as main" class='about'>
+        <p>hello</p>
+      </div>
+      <div ng-controller="MainCtrl as main" class='about'>
+        <p>hello</p>
+      </div>
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
