@@ -23,6 +23,10 @@ trace('If you can read this, you are probably a web developer :)');
   function MainCtrl() {
     var vm = this;
 
+    vm.ga = 'https://generalassemb.ly/education/web-development-immersive';
+    vm.scarborough = 'https://www.google.com/maps/place/Scarborough,+ME/@43.5918427,-70.3733864,12z/data=!3m1!4b1!4m2!3m1!1s0x4cb2a276c62bca91:0x20a644d65a944ba5';
+    vm.wwwr = 'http://www.wewatchwereview.com/';
+    vm.project_2 = 'http://teamberners-lee.github.io/ProjectManagementApp/';
     vm.about = 'I am currently enrolled in the Boston General Assembly <a href="www.google.com">Web Development Immersive (WDI)</a> program to acquire the skills to bring ideas to life.';
 
     // {

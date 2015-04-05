@@ -26,6 +26,7 @@ body {
   border-radius: 6px;
   padding: 20px;
   display: inline-flex;
+  flex-wrap: wrap;
   h1 {
     font-size: 60px;
     line-height: 1;
@@ -37,10 +38,13 @@ body {
   display: inline-block;
   background: #fff;
   flex-grow: 1;
+  width: 25%;
   border-radius: 6px;
   box-shadow: -4px 4px 0 rgba(0,0,0,0.5);
-  margin: 5px;
+  margin: 10px;
   text-align: center;
+  padding: 20px;
+  justify-content: space-between;
 }
 
 .browsehappy {
@@ -81,5 +85,11 @@ img.bulb-light {
 .imageTwo {
   z-index: -11;
   margin: 10px 10px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0034b3;
+  font-weight: bold;
 }
 
