@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Pat Needham</title>
+    <title>at Needham</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/pat_logo.png">
@@ -15,87 +15,28 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
-    <script src="bower_components/angular/angular.js"></script>
 
 
   </head>
-  <body ng-app="Pat">
+  <body ng-app="PatApp">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id='navArea'>
-      <div class='navLogo'>
-        <div class="navImageOne image"><img class='nav-bulb-dark' src='http://i.imgur.com/gJUwydU.png'></div>
-        <div class="navImageTwo image"><img class='nav-bulb-light' src='http://i.imgur.com/gJUwydU.png'></div>
-        <h1>at Needham</h1>
-      </div>
-      <nav class="navbar">
-        <!-- <h1><i class="fa fa-lightbulb-o"></i> Pat Needham</h1> -->
 
-        <ul>
-          <li class="brand"><a  href="./index.html" title="">Home</a></li>
-          <li class="brand"><a  href="/" title="">About</a></li>
-          <li class="brand"><a  href="/" title="">Work</a></li>
-          <li class="brand"><a  href="/" title="">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <div id='contact'>
-      <h5>Contact:</h5>
-      <ul>
-        <li><a href='mailto:patrick.h.needham@gmail.com', target='_blank'><i class='fa fa-envelope-o'></i></a></li>
-        <li><a href='https://twitter.com/patneedham_', target='_blank'><i class='fa fa-twitter'></i></a></li>
-        <li><a href='https://www.linkedin.com/in/patrickneedham', target='_blank'><i class='fa fa-linkedin'></i></a></li>
-        <li><a href='https://github.com/goodeats', target='_blank'><i class='fa fa-github'></i></a></li>
-        <li><a href='https://www.facebook.com/patrick.h.needham', target='_blank'><i class='fa fa-facebook'></i></a></li>
-        <li><a href='skype:patrick.h.needham', target='_blank'><i class='fa fa-skype'></i></a></li>
-      </ul>
-    </div>
+    <pat-navbar></pat-navbar>
+    <pat-panel></pat-panel>
+    <ng-view></ng-view>
 
     <div class='logo'>
       <div class='imageOne image'><img class='bulb-dark' src='http://i.imgur.com/gJUwydU.png'></div>
       <div class='imageTwo image'><img class='bulb-light' src='http://i.imgur.com/gJUwydU.png'></div>
     </div>
 
-    <div class='container'>
-      <div ng-controller='MainCtrl as main' class='about'>
-        <h3>Professional</h3>
-        <p>I am finishing up my course in the Boston General Assembly <a href='{{main.ga}}' target='_blank'>Web Development Immersive (WDI)</a> program to acquire the skills to bring ideas to life.</p>
-        <p>I have a background in financial services where I last managed the daily operations of a platform of alternative investments (i.e., hedge funds, private equities, etc.) for high net worth clients.</p>
-        <p>I want to take my experience working well under pressure to produce user-friendly results from complex information into the public forum that is the world wide web.</p>
-        <p>When the WDI ends I will be a full stack web developer excited to bring my new skills to a company within the Greater Boston tech community and have the opportunity to do some contract work until then.</p>
-      </div>
 
-      <div ng-controller='MainCtrl as main' class='about'>
-        <h3>Personal</h3>
-        <p>I grew up in <a href='{{main.scarborough}}' target='_blank'>Scarborough, Maine</a> where I enjoyed the beach in the summer and mountains in the winter.</p>
-        <p>Having lived in Greater Boston for the past six years, I spend free time with friends, cheering on the Boston sports teams, playing guitar, and otherwise staying in motion.</p>
-      </div>
 
-      <div ng-controller='MainCtrl as main' class='about'>
-        <h3>Project 1</h3>
-        <h5>We Watch/We Review</h5>
-        <p><a href='{{main.wwwr}}'>WWWR</a></p>
-        <p>a movie review site for friends</p>
-        <p>(the sign in/sign on is broken, but I'll fix after Project 3 is finished)</p>
-        <p>This is a pure Ruby on Rails app to allow users to provide movie reviews for their friends. There is no front end app as all views are completed using erb files. While this was fun to build my first web app, I am happy now to be able to use JSON to push back end data to front end apps using JavaScript. </p>
-        <p>The idea came during the controversy of the release of the movie The Interview and the subsequent reviews that came out suggesting how bad the movie was. My friends and I enjoyed it very much and decided reviews didn't matter unless they came from the people who mattered most.</p>
-        <p>Refactoring will be necessary as I feel my CSS skills have come a long way since this project was submitted. More features will need to be added such as allowing reviews to be private only to friends and using the Rotten Tomatoes API to pull movie titles and their posters. Heroku breaks the app after sign  in which of course is an issue I will fix once I am ready to post my 3rd and final project which I am more proud of and, therefore, takes precedent.</p>
-      </div>
-      <div ng-controller='MainCtrl as main' class='about'>
-        <h3>Project 2</h3>
-        <h5>Project Management App (Group Project)</h5>
-        <p><a href='{{main.project_2}}'>Project 2</a></p>
-        <p>a project management app</p>
-      </div>
-      <div ng-controller='MainCtrl as main' class='about'>
-        <h3>Project 3</h3>
-        <h5>Devourr</h5>
-        <p><a href='https://github.com/goodeats/devourrAPI'>Back End</a></p>
-        <p>a foodstagramming app</p>
-      </div>
-    </div>
+
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -103,6 +44,15 @@
     <script src="bower_components/underscore/underscore.js"></script>
     <script src="bower_components/backbone/backbone.js"></script>
     <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -118,6 +68,27 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+
+        <!-- routes -->
+        <script src="scripts/routes/Routes.js"></script>
+
+        <!-- factories and services and constants -->
+        <script src="scripts/constants/Constants.js"></script>
+        <script src="scripts/factories/AuthFactory.js"></script>
+
+        <!-- controllers -->
+        <script src="scripts/controllers/MainController.js"></script>
+        <script src="scripts/controllers/NavbarController.js"></script>
+        <script src="scripts/controllers/PanelController.js"></script>
+        <script src="scripts/controllers/AboutController.js"></script>
+        <script src="scripts/controllers/WorksController.js"></script>
+        <script src="scripts/controllers/BlogsController.js"></script>
+
+        <!-- directives -->
+        <script src="scripts/directives/MainDirective.js"></script>
+        <script src="scripts/directives/NavbarDirective.js"></script>
+        <script src="scripts/directives/PanelDirective.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>
