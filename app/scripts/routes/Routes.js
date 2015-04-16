@@ -4,7 +4,8 @@ angular.module('PatApp').config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'views/home.html',
-      controller: 'HomeController'
+      controller: 'HomeController',
+      controllerAs: 'homeController'
     })
     .when('/about', {
       templateUrl: 'views/about.html',
@@ -22,7 +23,7 @@ angular.module('PatApp').config(['$routeProvider', function($routeProvider){
     })
     .when('/blog',{
       templateUrl: 'views/blogs.html',
-      controller: 'blogsController',
+      controller: 'BlogsController',
       controllerAs: 'blogsController'
     })
     .when('/blog/:blogId',{

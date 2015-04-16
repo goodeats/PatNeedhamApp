@@ -5,4 +5,7 @@ homeController.$inject = [];
 
 function homeController(){
   console.log('hi from the home controller');
+  var vm = this;
+
+  vm.home = 'welcome to my site!';
 }
