@@ -1,0 +1,28 @@
+<div class='logo'>
+  <div class='imageOne image'><img class='bulb-dark' src='http://i.imgur.com/gJUwydU.png'></div>
+  <div class='imageTwo image'><img class='bulb-light' src='http://i.imgur.com/gJUwydU.png'></div>
+</div>
+<div class='container'>
+  <div ng-controller='WorksController as work' class='about'>
+    <h3>Project 1</h3>
+    <h5>We Watch/We Review</h5>
+    <p><a href='{{work.wwwr}}'>WWWR</a></p>
+    <p>a movie review site for friends</p>
+    <p>(the sign in/sign on is broken, but I'll fix after Project 3 is finished)</p>
+    <p>This is a pure Ruby on Rails app to allow users to provide movie reviews for their friends. There is no front end app as all views are completed using erb files. While this was fun to build my first web app, I am happy now to be able to use JSON to push back end data to front end apps using JavaScript. </p>
+    <p>The idea came during the controversy of the release of the movie The Interview and the subsequent reviews that came out suggesting how bad the movie was. My friends and I enjoyed it very much and decided reviews didn't matter unless they came from the people who mattered most.</p>
+    <p>Refactoring will be necessary as I feel my CSS skills have come a long way since this project was submitted. More features will need to be added such as allowing reviews to be private only to friends and using the Rotten Tomatoes API to pull movie titles and their posters. Heroku breaks the app after sign  in which of course is an issue I will fix once I am ready to post my 3rd and final project which I am more proud of and, therefore, takes precedent.</p>
+  </div>
+  <div ng-controller='WorksController as work' class='about'>
+    <h3>Project 2</h3>
+    <h5>Project Management App (Group Project)</h5>
+    <p><a href='{{work.project_2}}'>Project 2</a></p>
+    <p>a project management app</p>
+  </div>
+  <div ng-controller='WorksController as work' class='about'>
+    <h3>Project 3</h3>
+    <h5>Devourr</h5>
+    <p><a href='https://github.com/goodeats/devourrAPI'>Back End</a></p>
+    <p>a foodstagramming app</p>
+  </div>
+</div>

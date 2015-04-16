@@ -1,15 +1,15 @@
-section.main-content {
-  @extend .container;
-  padding-top: 100px;
-  left: 0;
-  position: relative;
-  @include transition(all, 1s, ease, 0);
-  &.menu-open {
-    left: 70%;
-  }
-  div.row {
-    // @extend .clearfix;
-    article.post {
-    }
-  }
-}
+// section.main-content {
+//   @extend .container;
+//   padding-top: 100px;
+//   left: 0;
+//   position: relative;
+//   @include transition(all, 1s, ease, 0);
+//   &.menu-open {
+//     left: 70%;
+//   }
+//   div.row {
+//     // @extend .clearfix;
+//     article.post {
+//     }
+//   }
+// }
