@@ -6,7 +6,7 @@ var trace = function(){
   }
 };
 
-trace('If you can read this, you are probably a web developer :)');
+trace('If you can read this, you are probably a web developer :D');
 
 
 /**
