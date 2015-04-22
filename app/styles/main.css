@@ -1,0 +1,96 @@
+// bower:scss
+// endbower
+
+@import "modules/mixins";
+@import "modules/variables";
+@import "partials/index";
+@import "partials/nav";
+@import "partials/panel";
+
+
+
+
+body {
+  background: #fafafa;
+  background-color: #FFB500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 120px 0 0 15%;
+  width: 80%;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  border-radius: 6px;
+  padding: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+.about {
+  display: inline-block;
+  background: #fff;
+  flex-grow: 1;
+  opacity: .95;
+  width: 25%;
+  border-radius: 6px;
+  box-shadow: -4px 4px 0 rgba(0,0,0,0.5);
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+div.logo {
+  margin: 150px 50% 0 40%;
+  position: fixed;
+  opacity: 0.5;
+  z-index: -10;
+  img {
+    height: 300px;
+  }
+}
+
+img.bulb-dark {
+  position: relative;
+}
+
+img.bulb-light {
+  position: relative;
+  opacity: 0.5;
+}
+
+.image {
+  position: absolute;
+}
+
+.imageOne {
+  z-index: -10;
+  margin-left: 10px;
+}
+
+.imageTwo {
+  z-index: -11;
+  margin: 10px 10px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #004aff;
+  font-weight: bold;
+}
+

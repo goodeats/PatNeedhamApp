@@ -1,0 +1,23 @@
+{
+  "name": "patneedhamapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "backbone": "~1.1.2",
+    "handlebars": "~3.0.0",
+    "angular": "^1.4.0",
+    "angular-animate": "^1.4.0",
+    "angular-aria": "^1.4.0",
+    "angular-cookies": "^1.4.0",
+    "angular-messages": "^1.4.0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-touch": "^1.4.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "PatApp"
+}
