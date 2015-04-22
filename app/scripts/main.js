@@ -29,6 +29,6 @@ trace('If you can read this, you are probably a web developer :D');
       'ngTouch',
       'MainController',
       'MainDirective'
-    ]).run(console.log('hi'));
+    ]).run(console.log('pat says hi'));
 
 
