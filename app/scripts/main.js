@@ -29,6 +29,13 @@ trace('If you can read this, you are probably a web developer :D');
       'ngTouch',
       'MainController',
       'MainDirective'
-    ]).run(console.log('pat says hi'));
+    ]).run(function($rootScope, $http, $window, $location, HomeFactory){
+      $location.path('#/');
+
+      $rootScope.$on('$routeChangeStart', function(event, next){
+          HomeFactory.homeMessage();
+      });
+
+    });
 
 

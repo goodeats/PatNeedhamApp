@@ -1,11 +1,11 @@
 'use strict';
 angular.module('MainController').controller('HomeController', homeController);
 
-homeController.$inject = [];
+homeController.$inject = ['HomeFactory'];
 
-function homeController(){
+function homeController(HomeFactory){
   console.log('hi from the home controller');
   var vm = this;
 
-  vm.home = 'welcome to my website!';
+  vm.home = HomeFactory.home[0];
 }
