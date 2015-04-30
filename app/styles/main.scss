@@ -39,13 +39,17 @@ body {
   background: #fff;
   flex-grow: 1;
   opacity: .95;
-  width: 25%;
+  width: 51%;
   border-radius: 6px;
   box-shadow: -4px 4px 0 rgba(0,0,0,0.5);
   margin: 10px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   justify-content: space-between;
+}
+
+.about span {
+  text-align: center;
 }
 
 .browsehappy {

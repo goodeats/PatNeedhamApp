@@ -1,14 +1,19 @@
 'use strict';
 angular.module('MainController').controller('WorksController', worksController);
 
-worksController.$inject = [];
+worksController.$inject = ['$scope'];
 
-function worksController(){
-  console.log('hi from the works controller');
+function worksController($scope){
   var vm = this;
 
   vm.wwwr = 'http://www.wewatchwereview.com/';
   vm.project_2 = 'http://teamberners-lee.github.io/ProjectManagementApp/';
+
+  vm.fade = false;
+  $scope.$on('$viewContentLoaded', function(){
+    vm.fade = !vm.fade;
+    console.log('icu');
+  });
 
 }
 
