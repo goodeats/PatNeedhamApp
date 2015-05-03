@@ -42,4 +42,16 @@
     <p>The inspiration for this project stemmed from my own desire to expand my  cooking ability and not eat out as much since it gets expensive. I care less for recipe sites since they tend to be crafted by "expert" cooks who use more ingredients than I would buy outside of their recipe. I feel that a social app that is dedicated to food pics would be engaging to view even when not eating because it's with friends. We trust our friends more than strangers so we might as well share ideas of food so that we can make better decisions.</p>
     <p>Pictures will need to be stored in Amazon Web Services - which is currently in process of implementation.</p>
   </div>
+  <div ng-controller='WorksController as work' class='about'>
+    <span>
+      <h3>Side Project</h3>
+      <h5>What the F@$% is @patneedham_ Tweeting?</h5>
+      <p><a href='http://goodeats.github.io/twizzer_frontend/'>Github Pages Site</a></p>
+      <p>playing around with the Twitter API</p>
+    </span>
+    <p>This was a homework assignment from General Assembly that I enjoyed in playing with content from one of the world's largest content providers: Twitter!</p>
+    <p>I used Ruby on Rails to set up the authentication with Twitter's API to call the last 20 tweets of a user by their Twitter handle and send all content that comes with each tweet to a JSON object. While many of the projects we did at GA required us to build content ourselves, I found this assignment fun because I only had to worry about working with the output. No database necessary to seed or maintain allowed me to concentrate fully on the front-end after the API was up and running.</p>
+    <p>Once my API was ready, I used Yeoman to scaffold a web app with jQuery. I used jQuery to make AJAX requests to the back-end server's calls to Twitter's API. While the app is admittedly very simple, it was fun filtering through the tweet metadata to post out a few items including a picture if there is one.</p>
+    <p>Features I might add later would be to add some styling depending on how many retweets or favorites a tweet has.</p>
+  </div>
 </div>
