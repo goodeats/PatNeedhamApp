@@ -1,5 +1,5 @@
 'use strict';
-angular.module('PatApp').factory('HomeFactory', ['$http', '$window', 'ServerUrl', function($http, $window, ServerUrl){
+angular.module('PatApp').factory('HomeFactory', function(){
 
   var home = [];
 
@@ -15,4 +15,4 @@ angular.module('PatApp').factory('HomeFactory', ['$http', '$window', 'ServerUrl'
     homeMessage: homeMessage
   };
 
-}]);
+});
