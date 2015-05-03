@@ -1,7 +1,4 @@
 'use strict';
-angular.module('MainController').controller('WorksController', worksController);
-
-worksController.$inject = ['$scope'];
 
 function worksController($scope){
   var vm = this;
@@ -17,4 +14,6 @@ function worksController($scope){
 
 }
 
+angular.module('MainController').controller('WorksController', worksController);
 
+worksController.$inject = ['$scope'];
