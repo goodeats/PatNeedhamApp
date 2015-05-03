@@ -1,18 +1,16 @@
-'use strict';
-angular.module('PatApp').factory('HomeFactory', function(){
+// 'use strict';
+// angular.module('PatApp').factory('HomeFactory', function(){
 
-  var home = [];
+//   var home = [];
 
-  var homeMessage = function(){
-    var welcome = ['welcome to my website!'];
-    // debugger
-    angular.copy(welcome, home);
-    // console.log('welcome to my website!');
-  };
+//   var homeMessage = function(){
+//     var welcome = ['welcome to my website!'];
+//     angular.copy(welcome, home);
+//   };
 
-  return {
-    home: home,
-    homeMessage: homeMessage
-  };
+//   return {
+//     home: home,
+//     homeMessage: homeMessage
+//   };
 
-});
+// });
