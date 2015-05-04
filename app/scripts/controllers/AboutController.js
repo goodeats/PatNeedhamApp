@@ -1,7 +1,7 @@
 'use strict';
 
 function aboutController(){
-  console.log('hi from the about controller');
+
   var vm = this;
 
   vm.ga = 'https://generalassemb.ly/education/web-development-immersive';

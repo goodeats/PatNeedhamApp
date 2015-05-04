@@ -1,7 +1,6 @@
 'use strict';
 
 function panelController(){
-  console.log('hi from the panel controller');
   var vm = this;
 
 }

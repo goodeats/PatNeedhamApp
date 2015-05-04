@@ -1,16 +1,10 @@
 'use strict';
 
-function worksController($scope){
+function worksController(){
   var vm = this;
 
   vm.wwwr = 'http://www.wewatchwereview.com/';
   vm.project_2 = 'http://teamberners-lee.github.io/ProjectManagementApp/';
-
-  vm.fade = false;
-  $scope.$on('$viewContentLoaded', function(){
-    vm.fade = !vm.fade;
-    console.log('icu');
-  });
 
 }
 
