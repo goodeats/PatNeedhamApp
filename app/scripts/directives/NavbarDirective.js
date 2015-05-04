@@ -7,8 +7,8 @@ angular.module('MainDirective').directive('patNavbar', [function(){
     controllerAs: 'navbarController',
     bindToController: true,
     scope: {},
-    link: function($scope, element, attrs){
-      console.log('hello from the navbar!');
-    }
+    // link: function($scope, element, attrs){
+
+    // }
   };
 }]);

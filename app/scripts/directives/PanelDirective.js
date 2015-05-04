@@ -7,8 +7,8 @@ angular.module('MainDirective').directive('patPanel', [function(){
     controllerAs: 'panelController',
     bindToController: true,
     scope: {},
-    link: function($scope, element, attrs){
+    // link: function($scope, element, attrs){
 
-    }
+    // }
   };
 }]);

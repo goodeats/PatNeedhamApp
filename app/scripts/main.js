@@ -29,8 +29,11 @@ trace('If you can read this, you are probably a web developer :D');
       'ngTouch',
       'MainController',
       'MainDirective'
-    ]).run(function($rootScope, $http, $window, $location){
-      $location.path('#/');
-    });
+    ]).run(console.log('welcome!'));
+
+    // function($rootScope, $http, $window, $location){
+    //   $location.path('#/');
+    // });
+
 
 
